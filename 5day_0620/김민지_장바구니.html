@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .wrap{
+            width: 800px;
+            height: 300px;
+            margin: 100px auto;
+
+            position: relative;
+        }
+        .home{
+            width: 40px;
+            height: 35px;
+        }
+        .right_bottom{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        .title{
+            width: 200px;
+            height: 100px;
+
+            position: absolute;
+            bottom: 80px;
+            right: 150px;
+        }
+
+        .cart_list{
+            font-weight: bold;
+            font-size: 20px;
+
+            position: absolute;
+            bottom: 15px;
+            right: 70px;
+        }
+        .cart{
+            width: 70px;
+            height: 70px;
+
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse:collapse;
+            width: 500px;
+            height: 80px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center; 
+            padding: 5px;
+            font-size: 7px;
+            font-weight: bold;
+        }
+        .line1{
+            background-color: rgb(220, 248, 248);
+        }
+        .order{
+            background-color: red;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <div>
+            <img class="home" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlGLrDV2ItL7NlKeC2ZCS1iR8xxnkE6KQ3TQ&usqp=CAU">
+            <span>홈으로</span>
+        </div>
+
+        <div class="right_bottom">
+            <div class="title">
+                <span class="cart_list">CART LIST</span>
+                <img class="cart" src="https://png.pngtree.com/png-vector/20220701/ourmid/pngtree-shopping-cart-icon-vector-symbol-png-image_5676170.png">
+             </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td class="line1">주문날짜</td>
+                        <td class="line1">제품명</td>
+                        <td class="line1">단가</td>
+                        <td class="line1">수량</td>
+                        <td class="line1">금액</td>
+                        <td class="line1">삭제</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>삭제</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"></td>
+                        <td class="order">주문하기</td>
+                    </tr>
+                </table>
+              
+            </div>
+
+
+        </div>
+
+       
+    </div>
+
+</body>
+</html>

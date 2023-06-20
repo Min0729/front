@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    ul{
+        list-style: none;
+    }
+    .menu-wrap{
+        display: flex;
+    }
+    .menu-item{
+        width: 200px;
+        height: 40px;
+        border: 1px solid black;
+    }
+    .title{
+        height: 40px;
+        display: block;
+    }
+    .menu-item ul{
+        display: none;
+    }
+    .menu-item:hover ul{
+        display: block;
+        text-align: center;
+        background-color: pink;
+        padding: 5px;
+    }
+
+</style>
+<body>
+    
+    <ul class="menu-wrap">
+        <li class="menu-item"><span class="title">메뉴1</span>
+            <ul>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+                <li>하위메뉴1</li>
+            </ul>
+        </li>
+        <li class="menu-item"><span class="title">메뉴2</span>
+            <ul>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+                <li>하위메뉴2</li>
+            </ul>
+        </li>
+        <li class="menu-item"><span class="title">메뉴3</span>
+            <ul>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+                <li>하위메뉴3</li>
+            </ul>
+        </li>
+        <li class="menu-item"><span class="title">메뉴4</span>
+            <ul>
+                <li>하위메뉴4</li>
+                <li>하위메뉴4</li>
+                <li>하위메뉴4</li>
+                <li>하위메뉴4</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>

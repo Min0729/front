@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .top-bar{
+            height: 102px;
+            display: flex;
+
+            position: relative;
+            align-items: center;
+        }
+        .logo{
+            width: 28%;
+            height: 102px;
+            position: relative;
+        }
+        .logo_img{
+            width: 156px;
+            height: 32px;
+
+            position: absolute;
+            right: 0px;
+            top: 30px;
+        }
+        .wrap-search-bar{
+            width: 42%;
+            height: 102px;
+
+            position: relative;
+        }
+        .search-bar{
+            width: 432px;
+            height: 46px;
+            border: 2px solid red;
+            border-radius: 30px;
+            margin-left: 25px;
+
+            position: relative;
+
+            position: absolute;
+            top: 20px;
+          
+        }
+        input{
+            width: 360px;
+            border: 0px;
+            outline: 0px;
+
+            position: absolute;
+            top: 15px;
+            left:20px;
+        }
+        .search_icon{
+            width: 30px;
+            height: 30px;
+
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+        .outwrap-icon{
+            width: 30%;
+            height: 102px;
+
+            position: relative;
+        }
+        ul{
+            list-style: none;
+        }
+        .wrap-icon{
+            display: flex;
+            position: absolute;
+            top: 20px;
+        }
+        .login{
+            text-align: center;
+            margin: 6px;
+        }
+        .login:hover .login_icon{
+            filter: none;
+        }
+        .login:hover a{
+            color: red;
+        }
+        .login_icon{
+            width: 24px;
+            height: 24px;
+            filter:brightness(0%);
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .cart{
+            text-align: center;
+            margin: 6px;
+        }
+        .cart_icon{
+            width: 24px;
+            height: 24px;
+            filter:brightness(0%);
+        }
+        .cart:hover .cart_icon{
+            filter: none;
+        }
+        .cart:hover a{
+            color: red;
+        }
+        .delivery{
+            text-align: center;
+            margin: 6px;
+        }
+        .delivery_icon{
+            width: 24px;
+            height: 24px;
+            filter:brightness(0%);
+        }
+        .delivery:hover .delivery_icon{
+            filter: none;
+        }
+        .delivery:hover a{
+            color: red;
+        }
+        .mylotte{
+            text-align: center;
+            margin: 6px;
+        }
+        .mylotte_icon{
+            width: 24px;
+            height: 24px;
+            filter:brightness(0%);
+        }
+        .mylotte:hover .mylotte_icon{
+            filter: none;
+        }
+        .mylotte:hover .red{
+            color: red;
+        }
+        .wrap-icon ul{
+            display: none;
+            color: black;
+        }
+        .wrap-icon:hover ul{
+            display: block;
+        }
+        .wrap-icon ul li{
+            padding: 8px;
+        }
+       
+
+        ul , li{
+            padding: 0px;
+            margin: 0px;
+        }
+ 
+
+
+        /**/
+
+        .mylotte{
+            position: relative;
+            height: 300px;
+        }
+
+        .hidden-menu{      
+            width: 200px;      
+            height: 100px;
+            position: absolute;
+            top:70px;
+            left:-71px;
+        } 
+        .a1:hover{
+            color: red;
+        }
+        .a2:hover{
+            color: red;
+        }
+        .a3:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="top-bar">
+        <div class="logo">
+            <img class="logo_img" src="https://image.lotteimall.com/imall_ec/site/images/imall_2021/common/h_homeshopping.png">
+        </div>
+
+        <div class="wrap-search-bar">
+            <div class="search-bar">
+                <input type="text">
+                <img class="search_icon" src="https://image.lotteimall.com/imall_ec/site/images/imall_2021/common/h_btn_search.png">
+            </div>
+        </div>
+
+        <div class="outwrap-icon">
+            <ul class="wrap-icon">
+                <li class="login">
+                    <a class="red" href="https://www.lotteimall.com/member/login/forward.LCLoginMem_pop.lotte?title=&type=s&sty=&tracking=&tobject=&ret=&member_gubun=&func=&reqServer=www.lotteimall.com&tlog=a1000_1">
+                        <img class="login_icon" src="https://image.lotteimall.com/imall_ec/site/images/imall_2021/common/h_util_login_on.png"> <br>
+                        로그인
+                    </a>
+                </li>
+                <li class="cart">
+                    <a class="red" href="https://www.lotteimall.com/cart/searchCartList.lotte?tlog=00100_16">
+                        <img class="cart_icon" src="https://image.lotteimall.com/imall_ec/site/images/imall_2021/common/h_util_cart_on.png"> <br>
+                        장바구니
+                    </a>
+                </li>
+                <li class="delivery">
+                    <a class="red" href="https://www.lotteimall.com/member/login/forward.LCLoginMem.lotte?ret=https://www.lotteimall.com/mypage/searchOrderList.lotte&sty=nom&member_gubun=&reqServer=www.lotteimall.com&tlog=a1000_1">
+                        <img class="delivery_icon" src="https://image.lotteimall.com/imall_ec/site/images/imall_2021/common/h_util_order_on.png"> <br>
+                        주문배송
+                    </a>
+                </li>
+                <li class="mylotte">
+                    <a class="red" href="https://www.lotteimall.com/member/login/forward.LCLoginMem.lotte?ret=/mypage/searchMyLotteMain.lotte?tlog=00100_9&sty=nom&member_gubun=&reqServer=www.lotteimall.com&tlog=a1000_1">
+                        <img class="mylotte_icon" src="https://image.lotteimall.com/imall_ec/site/images/imall_2021/common/h_util_user_on.png"> <br>
+                        <span class="mylotte_text">마이롯데</span>
+                    </a>
+
+                    <ul  class="hidden-menu">
+                        <li>
+                            <a class="a1" href="https://www.lotteimall.com/member/login/forward.LCLoginMem_pop.lotte?title=&type=s&sty=&tracking=&tobject=&ret=/mypage/searchExistCiritList.lotte&member_gubun=&func=&reqServer=www.lotteimall.com&tlog=a1000_1">상품평관리</a>
+                        </li>
+                        <li>
+                            <a class="a2" href="https://www.lotteimall.com/member/login/forward.LCLoginMem.lotte">1:1문의</a>
+                        </li>
+                        <li>
+                            <a class="a3" href="https://www.lotteimall.com/member/login/forward.LCLoginMem.lotte?ret=%2Ftvshop%2FbdAlarmServiceMainListRn.lotte">방송알림</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
