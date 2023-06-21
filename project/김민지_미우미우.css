@@ -184,24 +184,25 @@ ul,li{
     left: 240px;
 }
 .bottom_miumiu{
-    height: 280px;
     text-align: center;
     position: relative;
+    height: 310px;
+    
 }
 .bottom_miumiu img{
     width: 1552px;
     height: 264px;
 }
-.bottom_miumiu p{
+.bottom_miumiu >p{
     font-size: 10px;
     position: absolute;
-    left: 280px;
+    left: 150px;
     bottom: 10px;
 }
 .line{
     width: 85%;
     height: 1px;
-    background-color: rgb(181, 185, 185);
+    background-color: rgb(203, 209, 209);
     margin: 0 auto;
 }
 footer{
@@ -209,4 +210,12 @@ footer{
 }
 footer p{
     font-size: 11px;
+}
+.footer_left{
+    position: relative;
+    left: 150px;
+}
+.footer_right{
+    position: relative;
+    left:450px;
 }
