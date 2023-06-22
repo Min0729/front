@@ -29,6 +29,9 @@ ul,li{
     margin-right: 15px;
     margin-left: 15px;
 }
+.nav_text:hover{
+    text-decoration: underline;
+}
 .wrap_nav_icon{
     display: flex;
     
