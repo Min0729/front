@@ -9,11 +9,18 @@
     
     <script>
 
-        for(let i=1; i<=9; i++){
-            document.write("2 *"+ i + " = " +2*i + "<br>");
+        function printStar(n){
+            for(let i=0; i<n; i++){
+                document.write("*");
+            }
         }
 
+        let n = parseInt( prompt("몇개의 별을 찍을지 입력하세요"));
+
+        printStar(n);
+
     </script>
+
 
 </body>
 </html>

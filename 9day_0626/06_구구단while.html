@@ -9,7 +9,7 @@
     
     <script>
 
-/*
+        /*
         2*1=2
         2*2=4
         2*3=6
@@ -21,15 +21,17 @@
         4*1=4
         4*2=8
         4*3=12
-*/
-
-        for(let i=2; i<=5; i++){        //i=2                  i=3 
-
-            for(let j=1; j<=9; j++){   // j=1  ~9             j=1 ~9
-                document.write( i + "* " + j + " = " + i*j + "<br>");
+        */
+        let i=2;
+        let j=1;
+        while(i<=9){
+            while(j<=9){
+                document.write(i+ "*"+ j+ " = "+ i*j + "<br>");
+                j++;
             }
             document.write("<br>");
-
+            i++;
+            j=1;
         }
 
     </script>
