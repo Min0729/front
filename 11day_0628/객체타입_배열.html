@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        
+        let snackNameArry = [
+            "맛동산", "빼빼로", "오징어땅콩"
+        ];
+
+        alert(snackNameArry[0]);
+
+        let snackObjectArry=[
+            {
+                name:"맛동산",
+                price: 4200,
+                weight:300
+            },{
+                name:"빼빼로",
+                price: 1500,
+                weight:70
+            },{
+                name:"오징어땅콩",
+                price: 2500,
+                weight:180
+            }
+
+        ];
+
+        let firstSnackName= snackObjectArry[0].name;
+        let firstSnackPrice = snackObjectArry[0].price;
+        let firstSnackWeight = snackObjectArry[0].weight;
+        
+        alert(firstSnackName);
+        alert(firstSnackPrice);
+        alert(firstSnackWeight);
+
+
+        snackObjectArry[0].name = "새우깡";
+        snackObjectArry[0].price=1200;
+        snackObjectArry[0].weight=80;
+
+        firstSnackName= snackObjectArry[0].name;
+        firstSnackPrice = snackObjectArry[0].price;
+        firstSnackWeight = snackObjectArry[0].weight;
+        
+        alert(firstSnackName);
+        alert(firstSnackPrice);
+        alert(firstSnackWeight);
+        
+        snackObjectArry[1].name="칸쵸";
+        snackObjectArry[1].price=2000;
+        snackObjectArry[1].weight=100;
+
+        secondSnackName=snackObjectArry[1].name;
+        secondSnackPrice=snackObjectArry[1].price;
+        secondSnackWeight=snackObjectArry[1].weight;
+
+        alert(secondSnackName);
+        alert(secondSnackPrice);
+        alert(secondSnackWeight);
+
+        snackObjectArry[2].name="초코파이";
+        snackObjectArry[2].price=3000;
+        snackObjectArry[2].weight=50;
+
+        thirdSnackName=snackObjectArry[2].name;
+        thirdSnackPrice= snackObjectArry[2].price;
+        thirdSnackWeight=snackObjectArry[2].weight;
+
+        alert(thirdSnackName);
+        alert(thirdSnackPrice);
+        alert(thirdSnackWeight);
+
+    </script>
+
+</body>
+</html>

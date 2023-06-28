@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img src="boy.png" onclick="changeImg()" id="pimg">
+
+    <script>
+
+        let flag=true;
+        function changeImg(){
+            //alert("dkk");
+
+            // 이미지태그 선택
+            // src 속성
+            let imgE = document.getElementById("pimg");
+
+            if(flag==true){
+                imgE.src="girl.png";
+                flag=false;
+            }else{
+                imgE.src="boy.png";
+                flag=true;
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
