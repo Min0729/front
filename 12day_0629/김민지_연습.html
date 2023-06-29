@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+        }
+        li{
+            list-style: none;
+        }
+        header{
+            height: 90px;
+            background-color: #07040ed2;
+            display: flex;
+        }
+        .list1 li{
+            width: 200px;
+            color: white;
+            font-size: 18px;
+            
+        }
+        .list2 li{
+            width: 200px;
+            color: white;
+            font-size: 18px;
+        }
+        .icon{
+            width: 36px;
+            height: 36px;
+        }
+        body{
+            background-color: #07040ed5;
+        }
+        .movie_img{
+            width: 245px;
+            height: 352px;
+        }
+        .movie_img_list{
+            width: 1150px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .movie_img_list li{
+            margin: 20px;
+
+            position: relative;
+        }
+        button{
+            border: 0px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+        }
+        .heart{
+            width: 80px;
+            height: 36px;
+            background-color: #07040ed5;
+            border: 0.7px solid rgb(155, 151, 151);
+        
+        }
+        .book{
+            width: 160px;
+            height: 36px;
+            background-color: #037b94;
+        }
+        .detail_text{
+            width: 245px;
+            height: 352px;
+            border: 1px solid black;
+            
+            padding: 19px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: white;
+            background-color: #07040eb7;
+            
+            position: absolute;
+            top: 0px;
+
+            display: none;
+        }
+        .detail{
+            width: 245px;
+            height: 36px;
+            background-color: #6a45a7;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <header>
+            <img class="icon" src="아이콘img/icons8-메뉴-24.png">
+            <img class="icon" src="아이콘img/icons8-수색-50.png">
+            <ul class="list1">
+                <li>영화</li>
+                <li>예매</li>
+                <li>극장</li>
+            </ul>
+            <img src="https://lh3.googleusercontent.com/sZ5PR7FrgKoUdmW30SFR2OTLYN7bznpC8y71AUaXI-E5wF1_oLue55sfkUcF5jPyveKmXH1kG3O7hM5DDoubVXVOYaYMKX5w6dLNa0I">
+            <ul class="list2">
+                <li>이벤트</li>
+                <li>스토어</li>
+                <li>혜택</li>
+            </ul>
+            <img class="icon" src="아이콘img/icons8-달력-50.png">
+            <img class="icon" src="아이콘img/icons8-사람-32.png">
+
+        </header>
+        <body>
+            <ul class="movie_img_list">
+                <li>
+                    <img class="movie_img" id="movie_img1" src="https://img.megabox.co.kr/SharedImg/2023/05/26/UsO9OFOUA1z4jGKYVNK6mCX9AVT1zDEe_420.jpg">
+
+                    <div class="detail_text" id="movie_text1">
+                        디즈니ᆞ픽사의 놀라운 상상력! <br><br>
+                        올여름, 세상이 살아 숨 쉰다.<br>
+                        불, 물, 공기, 흙 4개의 원소들이<br>
+                        살고 있는 '엘리멘트 시티'<br>
+                        재치 있고 불처럼 열정 넘치는<br>
+                        '앰버'는 어느 날 우연히
+
+                    </div>
+
+                    <br>
+                    <button class="heart" id="heart_id">♡ 2.2k</button>
+                    <button class="book">예매</button>
+                    <br>
+                    <button class="detail" onclick="show1()" id="button1">상세정보 보기</button>
+                </li>
+                <li>
+                    <img class="movie_img" src="https://img.megabox.co.kr/SharedImg/2023/06/29/JbYAsIT7rLk4gnCrjvJKQ651EYLbonT0_420.jpg">
+
+                    <div class="detail_text" id="movie_text2">
+                        모험의 또 다른 이름, 마침내 그 <br>
+                        가 돌아왔다<br>
+                        <br>
+                        1969년 뉴욕<br>
+                        <br>
+                        전설적인 모험가이자 고고학자<br>
+                        '인디아나 존스' 앞에
+
+                    </div>
+
+                    <br>
+                    <button class="heart">♡ 2.2k</button>
+                    <button class="book">예매</button>
+                    <br>
+                    <button class="detail" onclick="show2()"  id="button2">상세정보 보기</button>
+                </li>
+                <li>
+                    <img class="movie_img" src="https://img.megabox.co.kr/SharedImg/2023/06/11/51LUhknQCeQgeUqXUXMPgdBrBT3bSPVl_420.jpg">
+
+                    <div class="detail_text" id="movie_text3">
+                        스파이더맨 VS 스파이더맨?! <br>
+                        <br>
+                        여러 성장통을 겪으며 새로운 스<br>
+                        파이더맨이 된 '마일스 모랄레<br>
+                        스'.<br>
+                        그 앞에 다른 평행세계의 스파이<br>
+                        더우먼 '그웬'이 다시 나타난다.
+
+                    </div>
+
+                    <br>
+                    <button class="heart">♡ 2.2k</button>
+                    <button class="book">예매</button>
+                    <br>
+                    <button class="detail" onclick="show3()" id="button3">상세정보 보기</button>
+                </li>
+                <li>
+                    <img class="movie_img" src="https://img.megabox.co.kr/SharedImg/2023/06/22/NXIMqPPjdM5RE5HXL2dmmoZsaKuKTClH_420.jpg">
+
+                    <div class="detail_text" id="movie_text4">
+                        "난 단 한번도 타겟을 놓쳐 본 적 <br>
+                        이 없거든"<br>
+                        <br>
+                        필리핀에서 불법 경기장을 전전<br>
+                        하며 병든 어머니와 살아가는 복<br>
+                        싱 선수 '마르코'.<br>
+                        어머니의 수술비 마련을 위해 평
+
+                    </div>
+
+                    <br>
+                    <button class="heart">♡ 2.2k</button>
+                    <button class="book">예매</button>
+                    <br>
+                    <button class="detail" onclick="show4()" id="button4">상세정보 보기</button>
+                </li>
+            </ul>
+        </body>
+
+    </div>
+
+    <script>
+
+        let flag=true;
+        function show1(){
+            //alert("ddsd");
+            let movie_text1= document.getElementById("movie_text1");
+            let button1 = document.getElementById("button1");
+            if(flag==true){
+                movie_text1.style.display="block";
+                button1.innerHTML="상세정보 닫기"
+                flag=false;
+            }else{
+                movie_text1.style.display="none";
+                button1.innerHTML="상세정보 보기"
+                flag=true;
+            }
+           
+        }
+
+        function show2(){
+            //alert("ddsd");
+            let movie_text1= document.getElementById("movie_text2");
+            let button1 = document.getElementById("button2");
+            if(flag==true){
+                movie_text1.style.display="block";
+                button1.innerHTML="상세정보 닫기"
+                flag=false;
+            }else{
+                movie_text1.style.display="none";
+                button1.innerHTML="상세정보 보기"
+                flag=true;
+            }
+           
+        }
+        function show3(){
+            //alert("ddsd");
+            let movie_text1= document.getElementById("movie_text3");
+            let button1 = document.getElementById("button3");
+            if(flag==true){
+                movie_text1.style.display="block";
+                button1.innerHTML="상세정보 닫기"
+                flag=false;
+            }else{
+                movie_text1.style.display="none";
+                button1.innerHTML="상세정보 보기"
+                flag=true;
+            }
+           
+        }
+
+        function show4(){
+            //alert("ddsd");
+            let movie_text1= document.getElementById("movie_text4");
+            let button1 = document.getElementById("button4");
+            if(flag==true){
+                movie_text1.style.display="block";
+                button1.innerHTML="상세정보 닫기"
+                flag=false;
+            }else{
+                movie_text1.style.display="none";
+                button1.innerHTML="상세정보 보기"
+                flag=true;
+            }
+           
+        }
+
+
+    </script>
+
+</body>
+</html>

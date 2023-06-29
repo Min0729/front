@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .wrap_all{
+            width: 900px;
+            border: 1px solid black;
+            text-align: center;
+            margin: 100px auto;
+        }
+        .wrap_1{
+            display: flex;
+            justify-content: center;
+        }
+        .wrap_1_left{
+            margin-right: 80px;
+        }
+        .wrap_1_left img{
+            width: 300px;
+            height: 150px;
+        }
+        .review{
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+        }
+        p{
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .wrap_content{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .content{
+            width: 250px;
+            height: 20px;
+            border: 1px solid black;
+            margin-bottom: 100px;
+        }
+        .info{
+            width: 750px;
+            height: 40px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        .more_info{
+            width: 750px;
+            height: 80px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        .left_p{
+            text-align: left;
+            margin-left: 75px;
+        }
+    </style>
+   
+</head>
+
+<body>
+    
+<div class="wrap_all">
+    <h1>REVIEW DETAIL</h1>
+
+    <div class="wrap_1">
+        <div class="wrap_1_left">
+            <p>이미지</p>
+            <img src="https://t1.daumcdn.net/cfile/tistory/99A07D405A8C32CC1C">
+        </div>
+        <div>
+            <p>맛평가(후기)</p>
+            <div class="review"></div>
+        </div>
+    </div>
+
+    <div class="wrap_content">
+        <div>
+            <p>연령대</p>
+            <div class="content"></div>
+        </div>
+        <div>
+            <p>만족도</p>
+            <div class="content"></div>
+        </div>
+        <div>
+            <p>성별</p>
+            <div class="content"></div>
+        </div>
+    </div>
+
+    <div>
+        <p class="left_p">판매점 정보(구매사이트)</p>
+        <div class="info"></div>
+    </div>
+
+    <div>
+        <p class="left_p">더 나누고 싶은 정보</p>
+        <div class="more_info"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
