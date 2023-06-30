@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .wrap{
+            background-image: url("https://img.megabox.co.kr/SharedImg/2023/05/26/UsO9OFOUA1z4jGKYVNK6mCX9AVT1zDEe_420.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 800px;
+            
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            -webkit-filter: blur(50px); 
+            -moz-filter: blur(50px); 
+            -o-filter: blur(50px); 
+            -ms-filter: blur(50px); 
+            filter: blur(50px);
+            z-index: -1; 
+            content: "";
+
+            background-blend-mode:  multiply;
+            background-color: #08040ec4;
+
+            transform: scale(1.02);
+        }
         ul{
             display: flex;
         }
@@ -13,24 +37,55 @@
         }
         header{
             height: 90px;
-            background-color: #07040ed2;
+            background-color: #07031185;
             display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-bottom: 1px solid rgba(255,255,255,.2);
         }
         .list1 li{
-            width: 200px;
+            width: 100px;
             color: white;
             font-size: 18px;
-            
+            position: relative;
+            top: 10px;
         }
         .list2 li{
-            width: 200px;
+            width: 100px;
             color: white;
             font-size: 18px;
+            position: relative;
+            top: 10px;
         }
         .icon{
-            width: 36px;
-            height: 36px;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            top: 10px;
+            margin-right: 30px;
         }
+
+        .hidden{
+            background-color: #0703113d;
+            position: relative;
+            height: 50px;
+            top: -15px;
+        }
+
+        .hidden ul li a{
+            color: white;
+            text-decoration: none;
+            margin-right:20px;
+            position: relative;
+            top: 14px;
+            left: 400px;
+            font-size: 15px;
+        }
+        .hidden ul li a:hover{
+            border-bottom: 1px solid white;
+        }
+
         body{
             background-color: #07040ed5;
         }
@@ -45,7 +100,6 @@
         }
         .movie_img_list li{
             margin: 20px;
-
             position: relative;
         }
         button{
@@ -94,6 +148,8 @@
 
 <body>
     
+    <div class="wrap"></div>
+
     <div>
         <header>
             <img class="icon" src="아이콘img/icons8-메뉴-24.png">
@@ -103,6 +159,7 @@
                 <li>예매</li>
                 <li>극장</li>
             </ul>
+
             <img src="https://lh3.googleusercontent.com/sZ5PR7FrgKoUdmW30SFR2OTLYN7bznpC8y71AUaXI-E5wF1_oLue55sfkUcF5jPyveKmXH1kG3O7hM5DDoubVXVOYaYMKX5w6dLNa0I">
             <ul class="list2">
                 <li>이벤트</li>
@@ -113,6 +170,16 @@
             <img class="icon" src="아이콘img/icons8-사람-32.png">
 
         </header>
+
+        <div class="hidden">
+            <ul>
+                <li><a href="">전체영화</a></li>
+                <li><a href="">큐레이션</a></li>
+                <li><a href="">무비포스트</a></li>
+            </ul>
+        </div>
+
+
         <body>
             <ul class="movie_img_list">
                 <li>
@@ -129,7 +196,7 @@
                     </div>
 
                     <br>
-                    <button class="heart" id="heart_id">♡ 2.2k</button>
+                    <button class="heart" id="heart_id1" onclick="changeRed1()">♡ 2.2k</button>
                     <button class="book">예매</button>
                     <br>
                     <button class="detail" onclick="show1()" id="button1">상세정보 보기</button>
@@ -149,7 +216,7 @@
                     </div>
 
                     <br>
-                    <button class="heart">♡ 2.2k</button>
+                    <button class="heart"  id="heart_id2"  onclick="changeRed2()">♡ 2.2k</button>
                     <button class="book">예매</button>
                     <br>
                     <button class="detail" onclick="show2()"  id="button2">상세정보 보기</button>
@@ -169,7 +236,7 @@
                     </div>
 
                     <br>
-                    <button class="heart">♡ 2.2k</button>
+                    <button class="heart"  id="heart_id3" onclick="changeRed3()">♡ 2.2k</button>
                     <button class="book">예매</button>
                     <br>
                     <button class="detail" onclick="show3()" id="button3">상세정보 보기</button>
@@ -189,7 +256,7 @@
                     </div>
 
                     <br>
-                    <button class="heart">♡ 2.2k</button>
+                    <button class="heart"  id="heart_id4" onclick="changeRed4()">♡ 2.2k</button>
                     <button class="book">예매</button>
                     <br>
                     <button class="detail" onclick="show4()" id="button4">상세정보 보기</button>
@@ -264,6 +331,65 @@
             }
            
         }
+
+        let flag2 =true;
+        function changeRed1(){
+            let heart_id1= document.getElementById("heart_id1");
+
+            if(flag2==true){
+                heart_id1.style.backgroundColor="#eb4a4a"; 
+                flag2=false;
+            }else{
+                heart_id1.style.backgroundColor="#07040ed5";
+                flag2=true;
+            }
+           
+        }
+
+        let flag3 =true;
+        function changeRed2(){
+            let heart_id2= document.getElementById("heart_id2");
+
+            if(flag3==true){
+                heart_id2.style.backgroundColor="#eb4a4a"; 
+                flag3=false;
+            }else{
+                heart_id2.style.backgroundColor="#07040ed5";
+                flag3=true;
+            }
+           
+        }
+
+        let flag4 =true;
+        function changeRed3(){
+            let heart_id3= document.getElementById("heart_id3");
+
+            if(flag4==true){
+                heart_id3.style.backgroundColor="#eb4a4a"; 
+                flag4=false;
+            }else{
+                heart_id3.style.backgroundColor="#07040ed5";
+                flag4=true;
+            }
+           
+        }
+
+        let flag5 =true;
+        function changeRed4(){
+            let heart_id4= document.getElementById("heart_id4");
+
+            if(flag5==true){
+                heart_id4.style.backgroundColor="#eb4a4a"; 
+                flag5=false;
+            }else{
+                heart_id4.style.backgroundColor="#07040ed5";
+                flag5=true;
+            }
+           
+        }
+
+        ///////////////////////////////////////////////////////////////////////
+
 
 
     </script>
