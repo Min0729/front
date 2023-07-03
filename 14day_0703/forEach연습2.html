@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let likes=["돈까스", "치킨", "피자", "떡볶이", "순대"];
+
+        for(i=0; i<likes.length; i++){
+            alert(likes[i] +""+ i);
+        }
+
+        ////
+        likes.forEach(function(item, index){
+            alert(item + "" + index);
+        });
+
+
+        ////
+        likes.forEach(a);
+
+        function a(item, index){
+            alert(item+""+index);
+        }
+
+
+    </script>
+
+</body>
+</html>
