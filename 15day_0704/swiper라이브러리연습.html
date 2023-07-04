@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <style>
+        
+        .swiper{  
+        width:1200px;
+        height: 600px;    
+        margin: 50px auto;
+        
+        }
+        .img1{
+            width: 400px;
+            height: 300px;
+        }
+        .img2{
+            width: 400px;
+            height: 300px;
+        }
+        .img3{
+            width: 400px;
+            height: 300px;
+        }
+        .img4{
+            width: 400px;
+            height: 300px;
+        }
+    </style>
+
+    <script>
+
+        window.addEventListener("load", function(){
+        
+                new Swiper(  '.swiper' ,  {          // 중괄호 == 객체
+                    slidesPerView:3 ,
+                    spaceBetween :50,
+                    centeredSlides:true,
+                    loop:true,
+                    autoplay: {
+                        delay: 1000
+                    },
+                    pagination: {
+                        el: '.swiper-pagination' ,
+                        clickable: true
+                    },
+                // Navigation arrows
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    } 
+                                        
+                });
+
+        });
+
+</script>
+
+
+</head>
+<body>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"> <img class="img1" src="https://smtown-cdn.smtown.com/upload/profile/web-detail/a0ada0a31ed046bb9f2c2a1e59c4c889_2022-02-16-11-44-50.jpg" ></div>
+          <div class="swiper-slide"><img class="img2" src="https://thumb.mt.co.kr/06/2021/06/2021062515297213403_1.jpg"></div>
+          <div class="swiper-slide"><img class="img3" src="https://biz.chosun.com/resizer/nE1a3Dg3Ar0Z8n0OIsm2sd6gRJk=/616x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosunbiz/ZI7KITAOQMY3GZGSYEFUUA54PY.jpg"></div>
+          <div class="swiper-slide"><img class="img4" src="https://image.newsis.com/2023/02/02/NISI20230202_0001187717_web.jpg"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+
+
+</body>
+</html>

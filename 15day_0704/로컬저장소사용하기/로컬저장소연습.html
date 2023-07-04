@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let snack=["빼빼로", "칸쵸", "새우깡","오징어땅콩","홈런볼"];
+
+        let result = JSON.stringify(snack);
+        localStorage.setItem("snacks", result);
+
+        let sSnack=localStorage.getItem("snacks");
+        alert("저장소로부터 꺼내온 데이터 ==== "+sSnack);
+
+        let oSnack=JSON.parse(sSnack);
+
+    </script>
+
+</body>
+</html>
