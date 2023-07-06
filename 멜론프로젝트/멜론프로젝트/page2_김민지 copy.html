@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./page2_김민지.css">
+    <link rel="stylesheet" href="./page2_김민지 copy.css">
 
     <style>
         .hr1{
@@ -956,58 +956,13 @@
                 <hr class="mj_hr">
                 
                 <div class="mj_wrap_like_person_out">
-                    <div class="mj_wrap_like_person">   
-                        <a class="mj_a_noUnderLine " href="">
-                            <img class="mj_profile mj_like_profile" src="https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120">
-                        </a> 
-                        <div class="mj_wrap_like_person_right">
-                            <a class="mj_a" href=""><p>사용자1</p></a>
-                            <div class="mj_wrap_like_person_right_inner">
-                                <p>발라드</p>
-                                <img src="mj_img/mj_note.png">
-                                21
-                            </div>
-                        </div>
+                    
+                    <div id="add_function">
+
+                        <button onclick="mj_show_like()">버튼</button>
+
                     </div>
-                    <div class="mj_wrap_like_person">   
-                        <a class="mj_a_noUnderLine " href="">
-                            <img class="mj_profile mj_like_profile" src="https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120">
-                        </a> 
-                        <div class="mj_wrap_like_person_right">
-                            <a class="mj_a" href=""><p>사용자2</p></a>
-                            <div class="mj_wrap_like_person_right_inner">
-                                <p>POP</p>
-                                <img src="mj_img/mj_note.png">
-                                75
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mj_wrap_like_person">   
-                        <a class="mj_a_noUnderLine " href="">
-                            <img class="mj_profile mj_like_profile" src="https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120">
-                        </a> 
-                        <div class="mj_wrap_like_person_right">
-                            <a class="mj_a" href=""><p>사용자3</p></a>
-                            <div class="mj_wrap_like_person_right_inner">
-                                <p>댄스</p>
-                                <img src="mj_img/mj_note.png">
-                                33
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mj_wrap_like_person">   
-                        <a class="mj_a_noUnderLine " href="">
-                            <img class="mj_profile mj_like_profile" src="https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120">
-                        </a> 
-                        <div class="mj_wrap_like_person_right">
-                            <a class="mj_a" href=""><p>사용자4</p></a>
-                            <div class="mj_wrap_like_person_right_inner">
-                                <p>힙합</p>
-                                <img src="mj_img/mj_note.png">
-                                46
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
 
@@ -1223,6 +1178,57 @@
         let mj_hidden_playlist_msg8 = document.querySelector(".mj_hidden_playlist_msg8");
         mj_hidden_playlist_msg8.style.display="none";
     }
+
+    let mj_item;
+    function mj_show_like(){
+
+        let mj_like_contents=[
+
+            {
+                img:"https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120",
+                nickname:"사용자1",
+                genre:"발라드",
+                num:"21"
+            },
+            {
+                img:"https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120",
+                nickname:"사용자2",
+                genre:"힙합",
+                num:"58"
+            },
+            {
+                img:"https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120",
+                nickname:"사용자3",
+                genre:"댄스",
+                num:"17"
+            },
+            {
+                img:"https://cdnimg.melon.co.kr/resource/image/cmt/web/common/noArtist01_300.jpg/melon/resize/120",
+                nickname:"사용자4",
+                genre:"POP",
+                num:"100"
+            }
+        ]
+
+        for(i=0; i<mj_like_contents.length; i++){
+
+            mj_item +=`<div class="mj_wrap_like_person">   
+                        <a class="mj_a_noUnderLine " href="">
+                            <img class="mj_profile mj_like_profile" src="${mj_like_contents[i].img}">
+                        </a> 
+                        <div class="mj_wrap_like_person_right">
+                            <a class="mj_a" href=""><p>${mj_like_contents[i].nickname}</p></a>
+                            <div class="mj_wrap_like_person_right_inner">
+                                <p>${mj_like_contents[i].genre}</p>
+                                <img src="mj_img/mj_note.png">
+                                ${mj_like_contents[i].num}
+                            </div>
+                        </div>
+                    </div>`
+        }
+        let add_function=document.getElementById("add_function");
+        add_function.innerHTML=mj_item;      
+    }   
 
 </script>
 

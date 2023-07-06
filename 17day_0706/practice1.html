@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        li{
+            width: 400px;
+            list-style: none;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <ul>
+       
+    </ul>
+
+    <div class="wrap"></div>
+    <button onclick="add()">추가</button>
+
+    <script>
+
+        let items=[
+            {
+                img:"https://smtown-cdn.smtown.com/upload/profile/web-detail/a0ada0a31ed046bb9f2c2a1e59c4c889_2022-02-16-11-44-50.jpg",
+                p:"루시1"
+            },
+            {
+                img:"https://thumb.mt.co.kr/06/2021/06/2021062515297213403_1.jpg",
+                p:"루시2"
+            },
+            {
+                img:"https://img.hankyung.com/photo/202005/20200526181451_5eccde0a8f0ff_1.jpg",
+                p:"루시3"
+            },
+            {
+                img:"https://img.seoul.co.kr//img/upload/2020/08/13/SSI_20200813151954.jpg",
+                p:"루시4"
+            },
+            {
+                img:"https://i.namu.wiki/i/QOZ51iy8jZ021LA0yQDNwveLAegAdgY3lxOGUmOYf7CC01l7pV4BVTNtK8aBIZE6l6JwloqIrEMU8jf4blIOlg.webp",
+                p:"루시5"
+            }
+
+
+        ]
+
+        function add(){
+
+            let item = '<ul>';
+
+            for(i=0; i<items.length; i++){
+                item += `<li>
+                        <img src="${items[i].img}">
+                        <p>${items[i].p}</p>
+                    </li>`
+            }
+
+            item+=`</ul>`
+
+            let wrap = document.querySelector(".wrap");
+            wrap.innerHTML=item;
+    }
+
+    </script>
+
+
+</body>
+
+
+
+
+</html>
